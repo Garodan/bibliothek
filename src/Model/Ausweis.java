@@ -1,5 +1,5 @@
-//Ein Ausweis ist 1 Jahr gültig. Er wird automatisch gesperrt, wenn der maximal erlaubte Gebührenstand überschritten ist oder die Laufzeit beendet ist.
-//Die Verlängerung des Ausweises oder das Entsperren wird in der Anwedung nicht implementiert.
+//Ein Ausweis ist 1 Jahr gÃ¼ltig. Er wird automatisch gesperrt, wenn der maximal erlaubte GebÃ¼hrenstand Ã¼berschritten ist oder die Laufzeit beendet ist.
+//Die VerlÃ¼ngerung des Ausweises oder das Entsperren wird in der Anwedung nicht implementiert.
 
 import java.time.LocalDate;
 
