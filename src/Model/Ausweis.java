@@ -5,40 +5,40 @@ import java.time.LocalDate;
 
 public class Ausweis {
 	
-	static int aNumberCount = 1000;
-    private int aNumber;
+	static int NumberCount = 1000;
+    private int Number;
     private Boolean locked;
-    private LocalDate aExpiryDate;
+    private LocalDate ExpiryDate;
     
     
     public Ausweis() {
-    	this.aNumber = this.getANumberCount() + 1;
-        this.setANumberCount();
+    	this.Number = this.getNumberCount() + 1;
+        this.setNumberCount();
         this.unlock();
-        this.aExpiryDate = LocalDate.now().plusYears(1);
+        this.ExpiryDate = LocalDate.now().plusYears(1);
         
     }
     //Ausweis Nummer Vergabe
     
-    private int getANumberCount() {
-        return aNumberCount;
+    private int getNumberCount() {
+        return NumberCount;
     }
 
-    private void setANumberCount() {
-        this.aNumberCount = this.aNumber;
+    private void setNumberCount() {
+        this.NumberCount = this.Number;
     }
     
-    public int getANumber() {
-        return this.aNumber;
+    public int getNumber() {
+        return this.Number;
     }
 
     //Ausweis Haltbarkeit
-    public LocalDate getAExpiryDate() {
-        return this.aExpiryDate;
+    public LocalDate getExpiryDate() {
+        return this.ExpiryDate;
     }
 
-    public void setAExpiryDate(LocalDate aExpiryDate) {
-        this.aExpiryDate = aExpiryDate;
+    public void setAExpiryDate(LocalDate ExpiryDate) {
+        this.ExpiryDate = ExpiryDate;
     }
     
     //Ausweis Sperren/Entsperren
