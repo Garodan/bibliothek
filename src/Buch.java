@@ -5,15 +5,15 @@
 //Die Ausleihe kann verlngert werden.
 //Beim Ausleihen wird ein Ausleihobjekt erzeugt(Buch, Nutzer, Rckgabedatum).
 //Die Daten des Buches knnen ausgegeben werden, dazu ist die Buchnummer erforderlich.
-package Model;
+
 import java.util.Date;
 
 public class Buch {
 	String autor;
 	String titel;
 	int nummer;
+	boolean verfuegbar;
 	boolean ausleihbar;
-	boolean toGO;
 	Date ExpireDate;
 
 	public Buch(){
@@ -22,10 +22,10 @@ public class Buch {
 	}
 
 	public void datenAussage() {
-		System.out.println(autor);
-		System.out.println(titel );
-		System.out.println(ausleihbar);
-		System.out.println(toGO);
+		System.out.println("Autor:" +autor);
+		System.out.println("Titel:" +titel );
+		System.out.println("Verfügbar:" +verfuegbar);
+		System.out.println("Ausleihbar:" +ausleihbar);
 
 	}
 }

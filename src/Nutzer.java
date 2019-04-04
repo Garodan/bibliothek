@@ -5,7 +5,6 @@
 //TODO Der Account beinhaltet Gebuehrenstand und die Daten von Vorbestellungen, Ausleihen, Ausweis. (DONE)
 //TODO Der Nutzer kann die Daten sehen, dazu muss er sich anmelden.
 
-package Model;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.text.DateFormat;
@@ -18,9 +17,9 @@ public class Nutzer {
 	double kontostand;
 	DateFormat formatter;
 	String date;
-	Ausweis ausweis;
-	Buch[] ausleihen;
-	Buch[] vorbestellen;
+	Ausweis ausweis;  //Getter und Setter?
+	Buch[] ausleihen; //Getter und Setter?
+	Buch[] vorbestellen; //Getter und Setter?
 
 	public Nutzer(){
 		date = bday.toString();
@@ -34,6 +33,8 @@ public class Nutzer {
 		System.out.println(formatter.format(date));
 		return date;
 	}
+
+
 
 	//Getter & Setter
 	public String getVorname() {
@@ -75,5 +76,7 @@ public class Nutzer {
 	public void setKontostand(double kontostand) {
 		this.kontostand = kontostand;
 	}
+
+
 }
 

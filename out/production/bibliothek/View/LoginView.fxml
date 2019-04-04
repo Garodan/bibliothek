@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="325.0" prefWidth="440.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
+   <children>
+      <Button fx:id="loginButton" layoutX="160.0" layoutY="233.0" mnemonicParsing="false" onAction="#logInButtonPressed" prefHeight="72.0" prefWidth="120.0" style="-fx-background-radius: 1000; -fx-background-color: yellow;" text="Login">
+         <font>
+            <Font name="Detente Regular" size="28.0" />
+         </font>
+      </Button>
+      <TextField fx:id="userpw" layoutX="146.0" layoutY="169.0" promptText="Enter Password" />
+      <TextField fx:id="username" layoutX="146.0" layoutY="138.0" promptText="Enter Username" />
+      <Hyperlink layoutX="157.0" layoutY="200.0" text="Noch keinen Account?" textFill="RED" />
+      <Label layoutX="29.0" layoutY="173.0" prefHeight="101.0" prefWidth="90.0" text="debugLog" />
+      <Label layoutX="138.0" layoutY="55.0" prefHeight="72.0" prefWidth="165.0" text="Bibliotheksprogramm" />
+   </children>
+</Pane>
